@@ -71,6 +71,7 @@ export default function FAQContainer() {
 								)
 							}
 							checked={key === faqKey}
+							onChange={() => null}
 							className="cursor-pointer"
 						/>
 						<div className="collapse-title font-semibold after:right-6">

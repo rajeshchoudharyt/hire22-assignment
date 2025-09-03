@@ -5,14 +5,14 @@ export default function Navbar() {
 		<nav className="navbar sticky top-0 bg-base-100 shadow-md z-50">
 			<div className="navbar-start">
 				<a
-					className="btn btn-ghost bg-transparent border-0 hover:translate-y-[1px] "
+					className="btn btn-ghost bg-transparent border-0 hover:translate-y-[1px]"
 					href="/">
 					<Image
 						alt="Logo"
-						src="logo/hire22-logo.svg"
-						className="h-auto"
 						height={20}
 						width={120}
+						src="logo/hire22-logo.svg"
+						className="object-contain w-auto h-6"
 					/>
 				</a>
 			</div>

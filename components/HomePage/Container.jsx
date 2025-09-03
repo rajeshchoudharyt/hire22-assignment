@@ -1,5 +1,7 @@
 import Image from "next/image";
 import FAQContainer from "./FAQContainer";
+import AboutUs from "./AboutUs";
+import Footer from "./Footer";
 
 export default function Container() {
 	return (
@@ -36,7 +38,7 @@ export default function Container() {
 
 				{/* To align odd number of child - "last:after:w-sm last:after:mx-4" */}
 				<div className="flex flex-wrap justify-center gap-4">
-					<div className="flex flex-col justify-center items-center bg-base-200/20 rounded-2xl px-4 py-6 w-fit">
+					<div className="flex flex-col justify-center items-center bg-base-200/50 rounded-2xl px-4 py-6 w-fit">
 						<h3 className="text-xl font-semibold">
 							Create a JobCoNCT
 						</h3>
@@ -45,7 +47,7 @@ export default function Container() {
 							height={200}
 							alt="Create a JobCoNCT image"
 							priority={true}
-							className="mb-4 lg:mb-6"
+							className="mb-4 lg:mb-6 w-auto h-full"
 							src="/create-a-jobconct.webp"
 						/>
 						<p className="max-w-sm tracking-wide">
@@ -54,7 +56,7 @@ export default function Container() {
 							within 22 hours.
 						</p>
 					</div>
-					<div className="flex flex-col justify-center items-center bg-base-200/20 rounded-2xl px-4 py-6 w-fit">
+					<div className="flex flex-col justify-center items-center bg-base-200/50 rounded-2xl px-4 py-6 w-fit">
 						<h3 className="text-xl font-semibold">
 							JoinX Score Profiles
 						</h3>
@@ -63,7 +65,7 @@ export default function Container() {
 							height={200}
 							alt="JoinX score profiles image"
 							priority={true}
-							className="mb-4 lg:mb-6"
+							className="mb-4 lg:mb-6 w-auto h-full"
 							src="/joinx-score-profiles.webp"
 						/>
 						<p className="max-w-sm tracking-wide">
@@ -73,7 +75,7 @@ export default function Container() {
 							that best fit your hiring criteria.
 						</p>
 					</div>
-					<div className="flex flex-col justify-center items-center bg-base-200/20 rounded-2xl px-4 py-6 w-fit">
+					<div className="flex flex-col justify-center items-center bg-base-200/50 rounded-2xl px-4 py-6 w-fit">
 						<h3 className="text-xl font-semibold">
 							Get Super Profiles
 						</h3>
@@ -82,7 +84,7 @@ export default function Container() {
 							height={200}
 							alt="Get super profiles image"
 							priority={true}
-							className="mb-4 lg:mb-6"
+							className="mb-4 lg:mb-6 w-auto h-full"
 							src="/get-super-profiles.webp"
 						/>
 						<p className="max-w-sm tracking-wide">
@@ -109,7 +111,7 @@ export default function Container() {
 							height={250}
 							alt="Interview ready talent image"
 							priority={true}
-							className="mb-4 lg:mb-6"
+							className="mb-4 lg:mb-6 w-auto h-full"
 							src="/interview-ready-talent.webp"
 						/>
 						<h3 className="text-xl font-semibold mb-4 bg-gradient-to-r from-p-blue to-p-pink bg-clip-text text-transparent">
@@ -129,7 +131,7 @@ export default function Container() {
 							height={250}
 							alt="AI ranked candidates image"
 							priority={true}
-							className="mb-4 lg:mb-6"
+							className="mb-4 lg:mb-6 w-auto h-full"
 							src="/ai-ranked-candidates.webp"
 						/>
 						<h3 className="text-xl font-semibold mb-4 bg-gradient-to-r from-p-blue to-p-pink bg-clip-text text-transparent">
@@ -150,7 +152,7 @@ export default function Container() {
 							height={250}
 							alt="Hire in 22 hours image"
 							priority={true}
-							className="mb-4 lg:mb-6"
+							className="mb-4 lg:mb-6 w-auto h-full"
 							src="/hire-in-22-hours.webp"
 						/>
 						<h3 className="text-xl font-semibold mb-4 bg-gradient-to-r from-p-blue to-p-pink bg-clip-text text-transparent">
@@ -173,22 +175,24 @@ export default function Container() {
 
 				<div
 					className="flex flex-col justify-center items-center text-left border-2 border-base-200 shadow-md 
-									rounded-2xl p-4 md-p-6 gap-y-4 max-w-lg mx-auto">
+									rounded-2xl px-4 py-6 md-p-6 gap-y-6 max-w-lg mx-auto">
 					<Image
 						alt="Joby Joseph, Founder and CEO - image"
 						width={150}
 						height={150}
-						className="mask mask-circle"
+						className="mask mask-circle w-auto h-full"
 						src="/joby-joseph.webp"
 					/>
 					<div className="flex justify-between items-center w-full">
-						<p className="text-left font-semibold">
+						<p className="text-left font-semibold text-sm">
 							Joby Joseph <br />
 							<span className="font-light">
-								Founder and CEO, Hire22.ai
+								Founder & CEO, Hire22.ai
 							</span>
 						</p>
-						<a className="btn btn-success w-fit">
+						<a
+							className="btn btn-success w-fit"
+							href="https://wa.me/918095222001?text=Hi Joby Joseph">
 							WhatsApp
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -213,11 +217,74 @@ export default function Container() {
 				</div>
 			</section>
 
+			{/* Section - "Clients" */}
+			<section
+				aria-label="talk to our CEO"
+				className="text-center p-4 flex flex-col items-center">
+				<h2 className="text-2xl lg:text-4xl font-semibold text-gray-800 mt-4 mb-8">
+					Our Happy Clients
+				</h2>
+				<div className="flex flex-wrap justify-center items-center gap-6">
+					<Image
+						alt="airbnb-logo"
+						src="/logo/airbnb-logo.webp"
+						height={100}
+						width={100}
+						className="object-contain w-auto h-full"
+					/>
+					<Image
+						alt="cisco-logo"
+						src="/logo/cisco-logo.webp"
+						height={100}
+						width={100}
+						className="object-contain w-auto h-full"
+					/>
+					<Image
+						alt="coolova-logo"
+						src="/logo/coolova-logo.webp"
+						height={100}
+						width={100}
+						className="object-contain w-auto h-full"
+					/>
+					<Image
+						alt="gojek-logo"
+						src="/logo/gojek-logo.webp"
+						height={100}
+						width={100}
+						className="object-contain w-auto h-full"
+					/>
+					<Image
+						alt="oracle-logo"
+						src="/logo/oracle-logo.webp"
+						height={100}
+						width={100}
+						className="object-contain w-auto h-full"
+					/>
+					<Image
+						alt="vmware-logo"
+						src="/logo/vmware-logo.webp"
+						height={100}
+						width={100}
+						className="object-contain w-auto h-full"
+					/>
+					<Image
+						alt="wipro-logo"
+						src="/logo/wipro-logo.webp"
+						height={100}
+						width={100}
+						className="object-contain w-auto h-full"
+					/>
+				</div>
+			</section>
+
 			{/* Section - "Employer FAQ" */}
 			<FAQContainer />
 
+			{/* Section - "About Us" */}
+			<AboutUs />
+
 			{/* Section - Footer */}
-			<section aria-label="footer"></section>
+			<Footer />
 		</div>
 	);
 }
