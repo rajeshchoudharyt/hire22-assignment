@@ -1,4 +1,4 @@
-A layout redisign of https://www.hire22.ai/recruit/hire-now with improvements.
+A layout redesign of https://www.hire22.ai/recruit/hire-now with improvements.
 
 ### Prerequisites
 Download and install Node.js, NPM and Git Cli
