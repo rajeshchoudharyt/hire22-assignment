@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+A layout redisign of https://www.hire22.ai/recruit/hire-now with improvements.
+
+### Prerequisites
+Download and install Node.js, NPM and Git Cli
 
 ## Getting Started
 
-First, run the development server:
+First, execute the below code to get started,
+
+```bash
+git clone https://github.com/rajeshchoudharyt/hire22-assignment.git
+cd hire22-assignment
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Improvements
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1.  Product design - Minimalist design.
+2.  Clean and maintainable code - Modular approach.
+3.  UX and responsiveness - Used bare Tailwind CSS for high peformance, responsiveness to different size devices and DaisyUI for accessibility.
+4.  Next.js best practices - Isolation of client components and image optimization.
+5.  SEO - Basic SEO implementation.
